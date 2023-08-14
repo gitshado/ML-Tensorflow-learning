@@ -1,0 +1,40 @@
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ conv2d (Conv2D)             (None, 26, 26, 32)        320
+
+ max_pooling2d (MaxPooling2  (None, 13, 13, 32)        0
+ D)
+
+ conv2d_1 (Conv2D)           (None, 11, 11, 32)        9248
+
+ max_pooling2d_1 (MaxPoolin  (None, 5, 5, 32)          0
+ g2D)
+
+ flatten (Flatten)           (None, 800)               0
+
+ dense (Dense)               (None, 128)               102528
+
+ dense_1 (Dense)             (None, 10)                1290
+
+=================================================================
+Total params: 113386 (442.91 KB)
+Trainable params: 113386 (442.91 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+
+MODEL TRAINING:
+Epoch 1/5
+1875/1875 [==============================] - 22s 11ms/step - loss: 0.4739 - accuracy: 0.8288
+Epoch 2/5
+1875/1875 [==============================] - 20s 11ms/step - loss: 0.3199 - accuracy: 0.8835
+Epoch 3/5
+1875/1875 [==============================] - 20s 11ms/step - loss: 0.2750 - accuracy: 0.8994
+Epoch 4/5
+1875/1875 [==============================] - 20s 11ms/step - loss: 0.2426 - accuracy: 0.9095
+Epoch 5/5
+1875/1875 [==============================] - 20s 11ms/step - loss: 0.2208 - accuracy: 0.9178
+
+MODEL EVALUATION:
+313/313 [==============================] - 1s 4ms/step - loss: 0.2697 - accuracy: 0.9016
